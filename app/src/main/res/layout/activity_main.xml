@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    N<RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+       <RelativeLayout
+
+            android:id="@+id/first_layout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:background="#FFFFFF"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true">
+
+           <TextView
+               android:id="@+id/circle_view"
+               android:layout_width="78dp"
+               android:layout_height="78dp"
+               android:layout_margin="20dp"
+               android:gravity="center"
+               android:padding="15dp"
+               android:text="Upload logo"
+               android:textColor="@android:color/darker_gray"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentBottom="true"
+               android:background="@drawable/circle"/>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="70dp"
+               android:layout_marginTop="25dp"
+               android:layout_marginStart="2dp"
+               android:layout_toEndOf="@+id/circle_view"
+               android:layout_alignParentEnd="true">
+
+               <TextView
+                   android:id="@+id/first_tvView"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="View and Update your logo"
+                   android:gravity="fill"
+                   android:textStyle="bold"
+                   android:textSize="15sp"
+                   android:textColor="@android:color/black" />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_below="@+id/first_tvView"
+                   android:layout_marginEnd="16dp"
+                   android:layout_marginTop="5dp"
+                   android:textColor="@android:color/darker_gray"
+                   android:text="This logo will appear on the documents (sales order, purchase order) that you create"
+                   android:textSize="12sp"/>
+           </RelativeLayout>
+
+       </RelativeLayout>
+
+        <TextView
+            android:id="@+id/organizational_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first_layout"
+            android:padding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Organizational Details"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"/>
+
+        <RelativeLayout
+            android:id="@+id/second_layout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:layout_alignStart="@+id/first_layout"
+            android:layout_alignEnd="@+id/first_layout"
+            android:layout_below="@+id/organizational_details">
+
+            <RelativeLayout
+                android:id="@+id/second_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/rectangle">
+
+                <TextView
+                    android:id="@+id/organization_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Organization Name"
+                    android:textColor="#342CFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mavis"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/organization_name"
+                    android:paddingStart="20dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="MavisObvion Enterprise"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/second_layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/second_layout_1"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rectangle">
+
+                <TextView
+                    android:id="@+id/industry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Industry"
+                    android:textColor="#342CFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/search_industry"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/industry"
+                    android:hint="Search for Industry to add"
+                    android:paddingStart="20dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="18sp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/organizational_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second_layout"
+            android:padding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Organizational Location"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"/>
+
+        <RelativeLayout
+            android:id="@+id/third_layout"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:layout_alignStart="@+id/first_layout"
+            android:layout_alignEnd="@+id/first_layout"
+            android:layout_below="@+id/organizational_location">
+
+            <RelativeLayout
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/rectangle">
+
+                <TextView
+                    android:id="@+id/company_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Company Location (City)"
+                    android:textStyle="bold"
+                    android:textColor="#342CFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/lagos"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:text="Lagos"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingStart="20dp"
+                    android:textSize="16dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/company_location"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/location"
+                android:background="@drawable/rectangle">
+
+                <TextView
+                    android:id="@+id/company_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Company Address"
+                    android:textStyle="bold"
+                    android:textColor="#342CFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/street_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="18sp"
+                    android:hint="Street Address"
+                    android:layout_below="@+id/company_address" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address"
+                android:layout_alignStart="@+id/address"
+                android:layout_marginTop="-10dp"
+                android:background="@drawable/ic_action_name"></RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:text="Add another Address"
+                android:textColor="#342CFF"
+                android:textStyle="bold"
+                android:layout_below="@+id/address"
+                android:layout_toEndOf="@+id/plus"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="-10dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/other_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/third_layout"
+            android:padding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Other Details"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"/>
+
+        <RelativeLayout
+            android:id="@+id/fourth_layout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@id/other_details"
+            android:layout_alignStart="@+id/first_layout"
+            android:layout_alignEnd="@+id/first_layout"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="-3dp"
+            android:layout_marginEnd="1dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/inventory"
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rectangle"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/inventory_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Inventory Start Date"
+                    android:textColor="#342CFF"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/inventory_start"
+                    android:background="@drawable/ic_error_outline" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/inventory_start"
+                    android:paddingStart="20dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="5dp"
+                    android:text="22 Nov, 2019"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/date"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/ic_event_note" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/address_2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/inventory"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rectangle">
+
+                <TextView
+                    android:id="@+id/company_address_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Company Address"
+                    android:textColor="#342CFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/street_address_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/company_address_2"
+                    android:hint="Street Address"
+                    android:paddingStart="20dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#257CFF"
+            android:layout_marginTop="40dp"
+            android:layout_alignStart="@+id/first_layout"
+            android:layout_alignEnd="@+id/first_layout"
+            android:layout_marginBottom="40dp"
+            android:layout_below="@id/fourth_layout"
+            android:text="Save Profile"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
